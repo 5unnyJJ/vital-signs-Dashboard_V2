@@ -1349,7 +1349,7 @@ function renderPage(){
     const fmt=(avg,std)=>avg!==null?`${avg} <span style="opacity:.55;font-weight:400">±${std??'—'}</span>`:'—';
     if(maxHb!==null)vitalsHtml+=`<div class="date-vital"><span>❤️</span><strong>${minHb}–${maxHb}</strong></div>`;
     vitalsHtml+=`<div class="date-vital"><span>🫁</span><strong>${maxBr!==null?minBr+'–'+maxBr:'—'}</strong></div>`;
-    vitalsHtml+=`<div class="date-vital std"><span>📊 波動</span><strong>❤️ ${fmt(avgHb,stdHb)} &nbsp;🫁 ${fmt(avgBr,stdBr)} &nbsp;🌡 ${fmt(avgTemp,stdTemp)}</strong></div>`;
+    vitalsHtml+=`<div class="date-vital std"><span></span><strong>❤️ ${fmt(avgHb,stdHb)} &nbsp;🫁 ${fmt(avgBr,stdBr)} &nbsp;🌡 ${fmt(avgTemp,stdTemp)}</strong></div>`;
   }
 
   const dateCard=document.createElement('div');dateCard.className='date-card open';
